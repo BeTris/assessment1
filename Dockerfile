@@ -1,6 +1,5 @@
 FROM nginx:alpine
-RUN mkdir /app
-COPY . /app/
-WORKDIR /app
-COPY index.html /usr/share/nginx/html
+RUN mkdir /usr
+COPY . /usr/share/nginx/html
+WORKDIR /usr
 EXPOSE 8080
